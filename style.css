@@ -38,6 +38,16 @@ h1, h2, h3, h4 {
     border-radius: 2px;
 }
 
+.conference-name {
+    font-family: 'Marcellus', serif; /* 用标题字体显得更正式 */
+    font-size: 1.15em;
+    font-weight: bold;
+    color: var(--text); /* 使用你们的主题蓝色 */
+    margin-top: 16px;
+    margin-bottom: 0;
+    letter-spacing: 0.05em; /* 稍微拉开一点字母间距，增加高级感 */
+}
+
 
 /* ============================================================
    HEADER
