@@ -547,6 +547,24 @@ h1, h2, h3, h4 {
     position: relative; 
 }
 
+/* --- 控制骨架图本身的切换显示 --- */
+.skel-option {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0; /* 默认隐藏所有的骨架图选项 */
+    transition: opacity 0.25s ease-in-out; /* 切换时的平滑淡入淡出动画 */
+}
+
+/* 只有当前被打上 active 标签的骨架图才会显示 */
+.skel-option.active {
+    opacity: 1; 
+    z-index: 1; /* 确保它浮在最上层 */
+}
+
 .skel-hint {
     position: absolute;
     bottom: 8px; 
