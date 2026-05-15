@@ -48,6 +48,36 @@ h1, h2, h3, h4 {
     letter-spacing: 0.05em; /* 稍微拉开一点字母间距，增加高级感 */
 }
 
+.paper-button-wrap {
+    margin: 14px 0 0;
+}
+
+.paper-button {
+    display: inline-block;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: #e8e8e8;
+    background: #2f2f2f;
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    padding: 0.45em 1.25em;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.paper-button:hover {
+    background: #3d3d3d;
+    color: #fff;
+    border-color: #252525;
+}
+
+.paper-button:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 3px;
+}
+
 
 /* ============================================================
    HEADER
